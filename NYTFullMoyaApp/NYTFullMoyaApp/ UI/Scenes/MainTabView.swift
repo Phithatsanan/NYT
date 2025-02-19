@@ -33,6 +33,11 @@ struct MainTabView: View {
                 .tabItem {
                     Label("Search", systemImage: "magnifyingglass")
                 }
+            
+            FakeStorePostView()
+                   .tabItem {
+                       Label("FakeStore", systemImage: "cart")
+                   }
         }
     }
 }

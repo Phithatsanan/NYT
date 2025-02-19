@@ -33,7 +33,7 @@ extension NYTTarget: TargetType {
     
     var task: Task {
         var params: [String: Any] = [:]
-        params["api-key"] = ""  // <--- Replace with your NYT key
+        params["api-key"] = "dbXUunJr2JLJzkeNXOlIUA05lpoXGkf1"  // <--- Replace with your NYT key
 
         switch self {
         case .searchArticles(let req):

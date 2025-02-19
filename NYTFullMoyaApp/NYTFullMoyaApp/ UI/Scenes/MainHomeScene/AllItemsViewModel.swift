@@ -40,7 +40,7 @@ class AllItemsViewModel: ObservableObject {
                 
             case .mostPopular:
                 let resp = try await repo.getMostPopular(request: .init(period: popPeriod))
-                anyItems = resp.results.map { AnyNYTItem(mostPopular: $0) }
+//                anyItems = resp.results.map { AnyNYTItem(mostPopular: $0) }
                 
             case .books:
                 let resp = try await repo.getBooks(request: .init(listName: selectedBookList))
