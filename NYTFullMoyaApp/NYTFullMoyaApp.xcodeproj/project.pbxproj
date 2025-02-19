@@ -64,6 +64,18 @@
 		7FF118F62D65A81800390818 /* CartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF118F52D65A81800390818 /* CartResponse.swift */; };
 		7FF118F82D65A82B00390818 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF118F72D65A82B00390818 /* UserResponse.swift */; };
 		7FF118FA2D65A84200390818 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF118F92D65A84200390818 /* LoginResponse.swift */; };
+		7FF118FD2D65C07B00390818 /* GitHubTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF118FC2D65C07B00390818 /* GitHubTarget.swift */; };
+		7FF118FF2D65C08800390818 /* GitHubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF118FE2D65C08800390818 /* GitHubRepository.swift */; };
+		7FF119012D65C09200390818 /* GitHubUsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF119002D65C09200390818 /* GitHubUsersViewModel.swift */; };
+		7FF119032D65C09E00390818 /* GitHubUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF119022D65C09E00390818 /* GitHubUsersView.swift */; };
+		7FF119052D65C0AB00390818 /* MyAPITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF119042D65C0AB00390818 /* MyAPITarget.swift */; };
+		7FF119082D65C0C400390818 /* MyAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF119072D65C0C400390818 /* MyAPIRepository.swift */; };
+		7FF1190B2D65C0E000390818 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF1190A2D65C0E000390818 /* ItemRequest.swift */; };
+		7FF1190D2D65C0EA00390818 /* ItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF1190C2D65C0EA00390818 /* ItemResponse.swift */; };
+		7FF1190F2D65C0F500390818 /* MyRestAPIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF1190E2D65C0F500390818 /* MyRestAPIViewModel.swift */; };
+		7FF119112D65C10100390818 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF119102D65C10100390818 /* EditItemView.swift */; };
+		7FF119132D65DC0A00390818 /* MyRestAPIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF119122D65DC0A00390818 /* MyRestAPIView.swift */; };
+		7FF119152D65DD8000390818 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF119142D65DD8000390818 /* AddItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +152,18 @@
 		7FF118F52D65A81800390818 /* CartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartResponse.swift; sourceTree = "<group>"; };
 		7FF118F72D65A82B00390818 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		7FF118F92D65A84200390818 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		7FF118FC2D65C07B00390818 /* GitHubTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubTarget.swift; sourceTree = "<group>"; };
+		7FF118FE2D65C08800390818 /* GitHubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepository.swift; sourceTree = "<group>"; };
+		7FF119002D65C09200390818 /* GitHubUsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUsersViewModel.swift; sourceTree = "<group>"; };
+		7FF119022D65C09E00390818 /* GitHubUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUsersView.swift; sourceTree = "<group>"; };
+		7FF119042D65C0AB00390818 /* MyAPITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPITarget.swift; sourceTree = "<group>"; };
+		7FF119072D65C0C400390818 /* MyAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPIRepository.swift; sourceTree = "<group>"; };
+		7FF1190A2D65C0E000390818 /* ItemRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRequest.swift; sourceTree = "<group>"; };
+		7FF1190C2D65C0EA00390818 /* ItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemResponse.swift; sourceTree = "<group>"; };
+		7FF1190E2D65C0F500390818 /* MyRestAPIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRestAPIViewModel.swift; sourceTree = "<group>"; };
+		7FF119102D65C10100390818 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
+		7FF119122D65DC0A00390818 /* MyRestAPIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRestAPIView.swift; sourceTree = "<group>"; };
+		7FF119142D65DD8000390818 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +218,8 @@
 		7F921D122D5F367E00771072 /* NYTFullMoyaApp */ = {
 			isa = PBXGroup;
 			children = (
+				7FF119062D65C0B600390818 /* API */,
+				7FF118FB2D65C06A00390818 /* Git */,
 				7F921D3F2D5F368C00771072 /* Network */,
 				7F921D402D5F369400771072 /* Extensions */,
 				7F921D412D5F36B100771072 /*  UI */,
@@ -385,6 +411,40 @@
 			path = FakeStoreScene;
 			sourceTree = "<group>";
 		};
+		7FF118FB2D65C06A00390818 /* Git */ = {
+			isa = PBXGroup;
+			children = (
+				7FF118FC2D65C07B00390818 /* GitHubTarget.swift */,
+				7FF118FE2D65C08800390818 /* GitHubRepository.swift */,
+				7FF119002D65C09200390818 /* GitHubUsersViewModel.swift */,
+				7FF119022D65C09E00390818 /* GitHubUsersView.swift */,
+			);
+			path = Git;
+			sourceTree = "<group>";
+		};
+		7FF119062D65C0B600390818 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7FF119092D65C0CE00390818 /* Model */,
+				7FF119042D65C0AB00390818 /* MyAPITarget.swift */,
+				7FF119072D65C0C400390818 /* MyAPIRepository.swift */,
+				7FF1190E2D65C0F500390818 /* MyRestAPIViewModel.swift */,
+				7FF119102D65C10100390818 /* EditItemView.swift */,
+				7FF119142D65DD8000390818 /* AddItemView.swift */,
+				7FF119122D65DC0A00390818 /* MyRestAPIView.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7FF119092D65C0CE00390818 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FF1190A2D65C0E000390818 /* ItemRequest.swift */,
+				7FF1190C2D65C0EA00390818 /* ItemResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -527,7 +587,9 @@
 				7F921D6B2D5F380D00771072 /* TimesWireView.swift in Sources */,
 				7F921D722D5F383700771072 /* BooksViewModel.swift in Sources */,
 				7F921D892D5F3FAA00771072 /* SectionHeader.swift in Sources */,
+				7FF1190D2D65C0EA00390818 /* ItemResponse.swift in Sources */,
 				7F921D452D5F36DE00771072 /* NYTRepository.swift in Sources */,
+				7FF119012D65C09200390818 /* GitHubUsersViewModel.swift in Sources */,
 				7F921D8B2D5F3FC200771072 /* HorizontalCarousel.swift in Sources */,
 				7F921D7A2D5F387A00771072 /* ArticleSearchView.swift in Sources */,
 				7F921D552D5F375B00771072 /* MostPopularResponse.swift in Sources */,
@@ -541,6 +603,7 @@
 				7F921D5D2D5F378A00771072 /* Date+Extension.swift in Sources */,
 				7F921D142D5F367E00771072 /* NYTFullMoyaAppApp.swift in Sources */,
 				7FF118E92D65A5D000390818 /* ProductResponse.swift in Sources */,
+				7FF119152D65DD8000390818 /* AddItemView.swift in Sources */,
 				7F921D962D5F4BA800771072 /* NYTCardView.swift in Sources */,
 				7FF118F42D65A7ED00390818 /* LoginRequest.swift in Sources */,
 				7F921D772D5F385600771072 /* TopStoriesViewModel.swift in Sources */,
@@ -551,6 +614,8 @@
 				7F921D942D5F400800771072 /* AllItemsViewModel.swift in Sources */,
 				7FF118F22D65A7DF00390818 /* UserRequest.swift in Sources */,
 				7F921D5B2D5F377C00771072 /* ArticleSearchResponse.swift in Sources */,
+				7FF119052D65C0AB00390818 /* MyAPITarget.swift in Sources */,
+				7FF119032D65C09E00390818 /* GitHubUsersView.swift in Sources */,
 				7F921D8E2D5F3FE800771072 /* MainHomeView.swift in Sources */,
 				7FF118E32D65A57D00390818 /* FakeStoreTarget.swift in Sources */,
 				7F921D6D2D5F381A00771072 /* TimesWireViewModel.swift in Sources */,
@@ -558,20 +623,27 @@
 				7F921D632D5F37C400771072 /* MainTabView.swift in Sources */,
 				7FF118E52D65A59D00390818 /* FakeStoreRepository.swift in Sources */,
 				7F921D902D5F3FF400771072 /* MainHomeViewModel.swift in Sources */,
+				7FF118FD2D65C07B00390818 /* GitHubTarget.swift in Sources */,
 				7F921D592D5F377000771072 /* TimesWireResponse.swift in Sources */,
 				7FF118E72D65A5BE00390818 /* ProductRequest.swift in Sources */,
+				7FF119112D65C10100390818 /* EditItemView.swift in Sources */,
+				7FF119082D65C0C400390818 /* MyAPIRepository.swift in Sources */,
 				7F921D572D5F376400771072 /* BooksResponse.swift in Sources */,
 				7FF118F82D65A82B00390818 /* UserResponse.swift in Sources */,
 				7FF118FA2D65A84200390818 /* LoginResponse.swift in Sources */,
 				7F921D702D5F382D00771072 /* BooksView.swift in Sources */,
 				7F921D512D5F374600771072 /* SearchArticlesRequest.swift in Sources */,
+				7FF1190B2D65C0E000390818 /* ItemRequest.swift in Sources */,
 				7F921D432D5F36D100771072 /* NYTTarget.swift in Sources */,
 				7FF118F62D65A81800390818 /* CartResponse.swift in Sources */,
+				7FF119132D65DC0A00390818 /* MyRestAPIView.swift in Sources */,
 				7F921D4F2D5F373B00771072 /* GetTimesWireRequest.swift in Sources */,
 				7F921D4D2D5F373200771072 /* GetBooksRequest.swift in Sources */,
 				7FF118EC2D65A5FA00390818 /* FakeStoreViewModel.swift in Sources */,
 				7F921D922D5F3FFE00771072 /* AllItemsView.swift in Sources */,
+				7FF118FF2D65C08800390818 /* GitHubRepository.swift in Sources */,
 				7FF118EE2D65A60B00390818 /* FakeStoreView.swift in Sources */,
+				7FF1190F2D65C0F500390818 /* MyRestAPIViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

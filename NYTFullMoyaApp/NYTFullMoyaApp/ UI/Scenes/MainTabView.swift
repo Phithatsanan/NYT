@@ -38,6 +38,14 @@ struct MainTabView: View {
                    .tabItem {
                        Label("FakeStore", systemImage: "cart")
                    }
+            GitHubUsersView()
+                  .tabItem {
+                      Label("GitHub", systemImage: "person.3.fill")
+                  }
+              MyRestAPIView()
+                  .tabItem {
+                      Label("My API", systemImage: "tray.full.fill")
+                  }
         }
     }
 }
