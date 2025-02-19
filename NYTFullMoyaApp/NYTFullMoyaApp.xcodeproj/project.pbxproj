@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F921D142D5F367E00771072 /* NYTFullMoyaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D132D5F367E00771072 /* NYTFullMoyaAppApp.swift */; };
+		7F921D162D5F367E00771072 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D152D5F367E00771072 /* ContentView.swift */; };
+		7F921D182D5F367E00771072 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D172D5F367E00771072 /* Item.swift */; };
+		7F921D1A2D5F368000771072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F921D192D5F368000771072 /* Assets.xcassets */; };
+		7F921D1D2D5F368000771072 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F921D1C2D5F368000771072 /* Preview Assets.xcassets */; };
+		7F921D272D5F368000771072 /* NYTFullMoyaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D262D5F368000771072 /* NYTFullMoyaAppTests.swift */; };
+		7F921D312D5F368000771072 /* NYTFullMoyaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D302D5F368000771072 /* NYTFullMoyaAppUITests.swift */; };
+		7F921D332D5F368000771072 /* NYTFullMoyaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D322D5F368000771072 /* NYTFullMoyaAppUITestsLaunchTests.swift */; };
+		7F921D432D5F36D100771072 /* NYTTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D422D5F36D100771072 /* NYTTarget.swift */; };
+		7F921D452D5F36DE00771072 /* NYTRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D442D5F36DE00771072 /* NYTRepository.swift */; };
+		7F921D492D5F371B00771072 /* GetTopStoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D482D5F371B00771072 /* GetTopStoriesRequest.swift */; };
+		7F921D4B2D5F372800771072 /* GetMostPopularRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D4A2D5F372800771072 /* GetMostPopularRequest.swift */; };
+		7F921D4D2D5F373200771072 /* GetBooksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D4C2D5F373200771072 /* GetBooksRequest.swift */; };
+		7F921D4F2D5F373B00771072 /* GetTimesWireRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D4E2D5F373B00771072 /* GetTimesWireRequest.swift */; };
+		7F921D512D5F374600771072 /* SearchArticlesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D502D5F374600771072 /* SearchArticlesRequest.swift */; };
+		7F921D532D5F375100771072 /* TopStoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D522D5F375100771072 /* TopStoriesResponse.swift */; };
+		7F921D552D5F375B00771072 /* MostPopularResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D542D5F375B00771072 /* MostPopularResponse.swift */; };
+		7F921D572D5F376400771072 /* BooksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D562D5F376400771072 /* BooksResponse.swift */; };
+		7F921D592D5F377000771072 /* TimesWireResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D582D5F377000771072 /* TimesWireResponse.swift */; };
+		7F921D5B2D5F377C00771072 /* ArticleSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D5A2D5F377C00771072 /* ArticleSearchResponse.swift */; };
+		7F921D5D2D5F378A00771072 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D5C2D5F378A00771072 /* Date+Extension.swift */; };
+		7F921D602D5F379E00771072 /* LoadingSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D5F2D5F379E00771072 /* LoadingSpinnerView.swift */; };
+		7F921D632D5F37C400771072 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D622D5F37C400771072 /* MainTabView.swift */; };
+		7F921D662D5F37DF00771072 /* MostPopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D652D5F37DF00771072 /* MostPopularView.swift */; };
+		7F921D682D5F37EB00771072 /* MostPopularViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D672D5F37EB00771072 /* MostPopularViewModel.swift */; };
+		7F921D6B2D5F380D00771072 /* TimesWireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D6A2D5F380D00771072 /* TimesWireView.swift */; };
+		7F921D6D2D5F381A00771072 /* TimesWireViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D6C2D5F381A00771072 /* TimesWireViewModel.swift */; };
+		7F921D702D5F382D00771072 /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D6F2D5F382D00771072 /* BooksView.swift */; };
+		7F921D722D5F383700771072 /* BooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D712D5F383700771072 /* BooksViewModel.swift */; };
+		7F921D752D5F384800771072 /* TopStoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D742D5F384800771072 /* TopStoriesView.swift */; };
+		7F921D772D5F385600771072 /* TopStoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D762D5F385600771072 /* TopStoriesViewModel.swift */; };
+		7F921D7A2D5F387A00771072 /* ArticleSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D792D5F387A00771072 /* ArticleSearchView.swift */; };
+		7F921D7C2D5F388400771072 /* ArticleSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D7B2D5F388400771072 /* ArticleSearchViewModel.swift */; };
+		7F921D7F2D5F3A3900771072 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 7F921D7E2D5F3A3900771072 /* CombineMoya */; };
+		7F921D812D5F3A3900771072 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 7F921D802D5F3A3900771072 /* Moya */; };
+		7F921D832D5F3A3900771072 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 7F921D822D5F3A3900771072 /* ReactiveMoya */; };
+		7F921D852D5F3A3900771072 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 7F921D842D5F3A3900771072 /* RxMoya */; };
+		7F921D892D5F3FAA00771072 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D882D5F3FAA00771072 /* SectionHeader.swift */; };
+		7F921D8B2D5F3FC200771072 /* HorizontalCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D8A2D5F3FC200771072 /* HorizontalCarousel.swift */; };
+		7F921D8E2D5F3FE800771072 /* MainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D8D2D5F3FE800771072 /* MainHomeView.swift */; };
+		7F921D902D5F3FF400771072 /* MainHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D8F2D5F3FF400771072 /* MainHomeViewModel.swift */; };
+		7F921D922D5F3FFE00771072 /* AllItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D912D5F3FFE00771072 /* AllItemsView.swift */; };
+		7F921D942D5F400800771072 /* AllItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D932D5F400800771072 /* AllItemsViewModel.swift */; };
+		7F921D962D5F4BA800771072 /* NYTCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D952D5F4BA800771072 /* NYTCardView.swift */; };
+		7F921D982D5F520400771072 /* BookCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D972D5F520400771072 /* BookCardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F921D232D5F368000771072 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F921D082D5F367E00771072 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F921D0F2D5F367E00771072;
+			remoteInfo = NYTFullMoyaApp;
+		};
+		7F921D2D2D5F368000771072 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F921D082D5F367E00771072 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F921D0F2D5F367E00771072;
+			remoteInfo = NYTFullMoyaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F921D102D5F367E00771072 /* NYTFullMoyaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTFullMoyaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F921D132D5F367E00771072 /* NYTFullMoyaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTFullMoyaAppApp.swift; sourceTree = "<group>"; };
+		7F921D152D5F367E00771072 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F921D172D5F367E00771072 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7F921D192D5F368000771072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F921D1C2D5F368000771072 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F921D222D5F368000771072 /* NYTFullMoyaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTFullMoyaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F921D262D5F368000771072 /* NYTFullMoyaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTFullMoyaAppTests.swift; sourceTree = "<group>"; };
+		7F921D2C2D5F368000771072 /* NYTFullMoyaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYTFullMoyaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F921D302D5F368000771072 /* NYTFullMoyaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTFullMoyaAppUITests.swift; sourceTree = "<group>"; };
+		7F921D322D5F368000771072 /* NYTFullMoyaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTFullMoyaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7F921D422D5F36D100771072 /* NYTTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTTarget.swift; sourceTree = "<group>"; };
+		7F921D442D5F36DE00771072 /* NYTRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTRepository.swift; sourceTree = "<group>"; };
+		7F921D482D5F371B00771072 /* GetTopStoriesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopStoriesRequest.swift; sourceTree = "<group>"; };
+		7F921D4A2D5F372800771072 /* GetMostPopularRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMostPopularRequest.swift; sourceTree = "<group>"; };
+		7F921D4C2D5F373200771072 /* GetBooksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBooksRequest.swift; sourceTree = "<group>"; };
+		7F921D4E2D5F373B00771072 /* GetTimesWireRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTimesWireRequest.swift; sourceTree = "<group>"; };
+		7F921D502D5F374600771072 /* SearchArticlesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArticlesRequest.swift; sourceTree = "<group>"; };
+		7F921D522D5F375100771072 /* TopStoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesResponse.swift; sourceTree = "<group>"; };
+		7F921D542D5F375B00771072 /* MostPopularResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularResponse.swift; sourceTree = "<group>"; };
+		7F921D562D5F376400771072 /* BooksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksResponse.swift; sourceTree = "<group>"; };
+		7F921D582D5F377000771072 /* TimesWireResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesWireResponse.swift; sourceTree = "<group>"; };
+		7F921D5A2D5F377C00771072 /* ArticleSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleSearchResponse.swift; sourceTree = "<group>"; };
+		7F921D5C2D5F378A00771072 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		7F921D5F2D5F379E00771072 /* LoadingSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinnerView.swift; sourceTree = "<group>"; };
+		7F921D622D5F37C400771072 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		7F921D652D5F37DF00771072 /* MostPopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularView.swift; sourceTree = "<group>"; };
+		7F921D672D5F37EB00771072 /* MostPopularViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularViewModel.swift; sourceTree = "<group>"; };
+		7F921D6A2D5F380D00771072 /* TimesWireView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesWireView.swift; sourceTree = "<group>"; };
+		7F921D6C2D5F381A00771072 /* TimesWireViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesWireViewModel.swift; sourceTree = "<group>"; };
+		7F921D6F2D5F382D00771072 /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
+		7F921D712D5F383700771072 /* BooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewModel.swift; sourceTree = "<group>"; };
+		7F921D742D5F384800771072 /* TopStoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesView.swift; sourceTree = "<group>"; };
+		7F921D762D5F385600771072 /* TopStoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesViewModel.swift; sourceTree = "<group>"; };
+		7F921D792D5F387A00771072 /* ArticleSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleSearchView.swift; sourceTree = "<group>"; };
+		7F921D7B2D5F388400771072 /* ArticleSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleSearchViewModel.swift; sourceTree = "<group>"; };
+		7F921D882D5F3FAA00771072 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		7F921D8A2D5F3FC200771072 /* HorizontalCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCarousel.swift; sourceTree = "<group>"; };
+		7F921D8D2D5F3FE800771072 /* MainHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeView.swift; sourceTree = "<group>"; };
+		7F921D8F2D5F3FF400771072 /* MainHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeViewModel.swift; sourceTree = "<group>"; };
+		7F921D912D5F3FFE00771072 /* AllItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllItemsView.swift; sourceTree = "<group>"; };
+		7F921D932D5F400800771072 /* AllItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllItemsViewModel.swift; sourceTree = "<group>"; };
+		7F921D952D5F4BA800771072 /* NYTCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTCardView.swift; sourceTree = "<group>"; };
+		7F921D972D5F520400771072 /* BookCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F921D0D2D5F367E00771072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F921D812D5F3A3900771072 /* Moya in Frameworks */,
+				7F921D7F2D5F3A3900771072 /* CombineMoya in Frameworks */,
+				7F921D852D5F3A3900771072 /* RxMoya in Frameworks */,
+				7F921D832D5F3A3900771072 /* ReactiveMoya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F921D1F2D5F368000771072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F921D292D5F368000771072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F921D072D5F367E00771072 = {
+			isa = PBXGroup;
+			children = (
+				7F921D122D5F367E00771072 /* NYTFullMoyaApp */,
+				7F921D252D5F368000771072 /* NYTFullMoyaAppTests */,
+				7F921D2F2D5F368000771072 /* NYTFullMoyaAppUITests */,
+				7F921D112D5F367E00771072 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F921D112D5F367E00771072 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D102D5F367E00771072 /* NYTFullMoyaApp.app */,
+				7F921D222D5F368000771072 /* NYTFullMoyaAppTests.xctest */,
+				7F921D2C2D5F368000771072 /* NYTFullMoyaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F921D122D5F367E00771072 /* NYTFullMoyaApp */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D3F2D5F368C00771072 /* Network */,
+				7F921D402D5F369400771072 /* Extensions */,
+				7F921D412D5F36B100771072 /*  UI */,
+				7F921D132D5F367E00771072 /* NYTFullMoyaAppApp.swift */,
+				7F921D152D5F367E00771072 /* ContentView.swift */,
+				7F921D172D5F367E00771072 /* Item.swift */,
+				7F921D192D5F368000771072 /* Assets.xcassets */,
+				7F921D1B2D5F368000771072 /* Preview Content */,
+			);
+			path = NYTFullMoyaApp;
+			sourceTree = "<group>";
+		};
+		7F921D1B2D5F368000771072 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D1C2D5F368000771072 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F921D252D5F368000771072 /* NYTFullMoyaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D262D5F368000771072 /* NYTFullMoyaAppTests.swift */,
+			);
+			path = NYTFullMoyaAppTests;
+			sourceTree = "<group>";
+		};
+		7F921D2F2D5F368000771072 /* NYTFullMoyaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D302D5F368000771072 /* NYTFullMoyaAppUITests.swift */,
+				7F921D322D5F368000771072 /* NYTFullMoyaAppUITestsLaunchTests.swift */,
+			);
+			path = NYTFullMoyaAppUITests;
+			sourceTree = "<group>";
+		};
+		7F921D3F2D5F368C00771072 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D422D5F36D100771072 /* NYTTarget.swift */,
+				7F921D442D5F36DE00771072 /* NYTRepository.swift */,
+				7F921D462D5F36FD00771072 /* Requests */,
+				7F921D472D5F370400771072 /* Responses */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7F921D402D5F369400771072 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D5C2D5F378A00771072 /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7F921D412D5F36B100771072 /*  UI */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D612D5F37A400771072 /* Scenes */,
+				7F921D5E2D5F379100771072 /* Components */,
+			);
+			path = " UI";
+			sourceTree = "<group>";
+		};
+		7F921D462D5F36FD00771072 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D482D5F371B00771072 /* GetTopStoriesRequest.swift */,
+				7F921D4A2D5F372800771072 /* GetMostPopularRequest.swift */,
+				7F921D4C2D5F373200771072 /* GetBooksRequest.swift */,
+				7F921D4E2D5F373B00771072 /* GetTimesWireRequest.swift */,
+				7F921D502D5F374600771072 /* SearchArticlesRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		7F921D472D5F370400771072 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D522D5F375100771072 /* TopStoriesResponse.swift */,
+				7F921D542D5F375B00771072 /* MostPopularResponse.swift */,
+				7F921D562D5F376400771072 /* BooksResponse.swift */,
+				7F921D582D5F377000771072 /* TimesWireResponse.swift */,
+				7F921D5A2D5F377C00771072 /* ArticleSearchResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		7F921D5E2D5F379100771072 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D5F2D5F379E00771072 /* LoadingSpinnerView.swift */,
+				7F921D882D5F3FAA00771072 /* SectionHeader.swift */,
+				7F921D8A2D5F3FC200771072 /* HorizontalCarousel.swift */,
+				7F921D952D5F4BA800771072 /* NYTCardView.swift */,
+				7F921D972D5F520400771072 /* BookCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		7F921D612D5F37A400771072 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D622D5F37C400771072 /* MainTabView.swift */,
+				7F921D8C2D5F3FDA00771072 /* MainHomeScene */,
+				7F921D782D5F386F00771072 /* ArticleSearchScene */,
+				7F921D732D5F383D00771072 /* TopStoriesScene */,
+				7F921D6E2D5F381E00771072 /* BooksScene */,
+				7F921D692D5F37F100771072 /* TimesWireScene */,
+				7F921D642D5F37CB00771072 /* MostPopularScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		7F921D642D5F37CB00771072 /* MostPopularScene */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D652D5F37DF00771072 /* MostPopularView.swift */,
+				7F921D672D5F37EB00771072 /* MostPopularViewModel.swift */,
+			);
+			path = MostPopularScene;
+			sourceTree = "<group>";
+		};
+		7F921D692D5F37F100771072 /* TimesWireScene */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D6A2D5F380D00771072 /* TimesWireView.swift */,
+				7F921D6C2D5F381A00771072 /* TimesWireViewModel.swift */,
+			);
+			path = TimesWireScene;
+			sourceTree = "<group>";
+		};
+		7F921D6E2D5F381E00771072 /* BooksScene */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D6F2D5F382D00771072 /* BooksView.swift */,
+				7F921D712D5F383700771072 /* BooksViewModel.swift */,
+			);
+			path = BooksScene;
+			sourceTree = "<group>";
+		};
+		7F921D732D5F383D00771072 /* TopStoriesScene */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D742D5F384800771072 /* TopStoriesView.swift */,
+				7F921D762D5F385600771072 /* TopStoriesViewModel.swift */,
+			);
+			path = TopStoriesScene;
+			sourceTree = "<group>";
+		};
+		7F921D782D5F386F00771072 /* ArticleSearchScene */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D792D5F387A00771072 /* ArticleSearchView.swift */,
+				7F921D7B2D5F388400771072 /* ArticleSearchViewModel.swift */,
+			);
+			path = ArticleSearchScene;
+			sourceTree = "<group>";
+		};
+		7F921D8C2D5F3FDA00771072 /* MainHomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				7F921D8D2D5F3FE800771072 /* MainHomeView.swift */,
+				7F921D8F2D5F3FF400771072 /* MainHomeViewModel.swift */,
+				7F921D912D5F3FFE00771072 /* AllItemsView.swift */,
+				7F921D932D5F400800771072 /* AllItemsViewModel.swift */,
+			);
+			path = MainHomeScene;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F921D0F2D5F367E00771072 /* NYTFullMoyaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F921D362D5F368000771072 /* Build configuration list for PBXNativeTarget "NYTFullMoyaApp" */;
+			buildPhases = (
+				7F921D0C2D5F367E00771072 /* Sources */,
+				7F921D0D2D5F367E00771072 /* Frameworks */,
+				7F921D0E2D5F367E00771072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NYTFullMoyaApp;
+			packageProductDependencies = (
+				7F921D7E2D5F3A3900771072 /* CombineMoya */,
+				7F921D802D5F3A3900771072 /* Moya */,
+				7F921D822D5F3A3900771072 /* ReactiveMoya */,
+				7F921D842D5F3A3900771072 /* RxMoya */,
+			);
+			productName = NYTFullMoyaApp;
+			productReference = 7F921D102D5F367E00771072 /* NYTFullMoyaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F921D212D5F368000771072 /* NYTFullMoyaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F921D392D5F368000771072 /* Build configuration list for PBXNativeTarget "NYTFullMoyaAppTests" */;
+			buildPhases = (
+				7F921D1E2D5F368000771072 /* Sources */,
+				7F921D1F2D5F368000771072 /* Frameworks */,
+				7F921D202D5F368000771072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F921D242D5F368000771072 /* PBXTargetDependency */,
+			);
+			name = NYTFullMoyaAppTests;
+			productName = NYTFullMoyaAppTests;
+			productReference = 7F921D222D5F368000771072 /* NYTFullMoyaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F921D2B2D5F368000771072 /* NYTFullMoyaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F921D3C2D5F368000771072 /* Build configuration list for PBXNativeTarget "NYTFullMoyaAppUITests" */;
+			buildPhases = (
+				7F921D282D5F368000771072 /* Sources */,
+				7F921D292D5F368000771072 /* Frameworks */,
+				7F921D2A2D5F368000771072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F921D2E2D5F368000771072 /* PBXTargetDependency */,
+			);
+			name = NYTFullMoyaAppUITests;
+			productName = NYTFullMoyaAppUITests;
+			productReference = 7F921D2C2D5F368000771072 /* NYTFullMoyaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F921D082D5F367E00771072 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					7F921D0F2D5F367E00771072 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					7F921D212D5F368000771072 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 7F921D0F2D5F367E00771072;
+					};
+					7F921D2B2D5F368000771072 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 7F921D0F2D5F367E00771072;
+					};
+				};
+			};
+			buildConfigurationList = 7F921D0B2D5F367E00771072 /* Build configuration list for PBXProject "NYTFullMoyaApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F921D072D5F367E00771072;
+			packageReferences = (
+				7F921D7D2D5F3A3900771072 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
+			productRefGroup = 7F921D112D5F367E00771072 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F921D0F2D5F367E00771072 /* NYTFullMoyaApp */,
+				7F921D212D5F368000771072 /* NYTFullMoyaAppTests */,
+				7F921D2B2D5F368000771072 /* NYTFullMoyaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F921D0E2D5F367E00771072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F921D1D2D5F368000771072 /* Preview Assets.xcassets in Resources */,
+				7F921D1A2D5F368000771072 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F921D202D5F368000771072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F921D2A2D5F368000771072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F921D0C2D5F367E00771072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F921D6B2D5F380D00771072 /* TimesWireView.swift in Sources */,
+				7F921D722D5F383700771072 /* BooksViewModel.swift in Sources */,
+				7F921D892D5F3FAA00771072 /* SectionHeader.swift in Sources */,
+				7F921D452D5F36DE00771072 /* NYTRepository.swift in Sources */,
+				7F921D8B2D5F3FC200771072 /* HorizontalCarousel.swift in Sources */,
+				7F921D7A2D5F387A00771072 /* ArticleSearchView.swift in Sources */,
+				7F921D552D5F375B00771072 /* MostPopularResponse.swift in Sources */,
+				7F921D162D5F367E00771072 /* ContentView.swift in Sources */,
+				7F921D682D5F37EB00771072 /* MostPopularViewModel.swift in Sources */,
+				7F921D602D5F379E00771072 /* LoadingSpinnerView.swift in Sources */,
+				7F921D182D5F367E00771072 /* Item.swift in Sources */,
+				7F921D7C2D5F388400771072 /* ArticleSearchViewModel.swift in Sources */,
+				7F921D4B2D5F372800771072 /* GetMostPopularRequest.swift in Sources */,
+				7F921D752D5F384800771072 /* TopStoriesView.swift in Sources */,
+				7F921D5D2D5F378A00771072 /* Date+Extension.swift in Sources */,
+				7F921D142D5F367E00771072 /* NYTFullMoyaAppApp.swift in Sources */,
+				7F921D962D5F4BA800771072 /* NYTCardView.swift in Sources */,
+				7F921D772D5F385600771072 /* TopStoriesViewModel.swift in Sources */,
+				7F921D532D5F375100771072 /* TopStoriesResponse.swift in Sources */,
+				7F921D492D5F371B00771072 /* GetTopStoriesRequest.swift in Sources */,
+				7F921D662D5F37DF00771072 /* MostPopularView.swift in Sources */,
+				7F921D942D5F400800771072 /* AllItemsViewModel.swift in Sources */,
+				7F921D5B2D5F377C00771072 /* ArticleSearchResponse.swift in Sources */,
+				7F921D8E2D5F3FE800771072 /* MainHomeView.swift in Sources */,
+				7F921D6D2D5F381A00771072 /* TimesWireViewModel.swift in Sources */,
+				7F921D982D5F520400771072 /* BookCardView.swift in Sources */,
+				7F921D632D5F37C400771072 /* MainTabView.swift in Sources */,
+				7F921D902D5F3FF400771072 /* MainHomeViewModel.swift in Sources */,
+				7F921D592D5F377000771072 /* TimesWireResponse.swift in Sources */,
+				7F921D572D5F376400771072 /* BooksResponse.swift in Sources */,
+				7F921D702D5F382D00771072 /* BooksView.swift in Sources */,
+				7F921D512D5F374600771072 /* SearchArticlesRequest.swift in Sources */,
+				7F921D432D5F36D100771072 /* NYTTarget.swift in Sources */,
+				7F921D4F2D5F373B00771072 /* GetTimesWireRequest.swift in Sources */,
+				7F921D4D2D5F373200771072 /* GetBooksRequest.swift in Sources */,
+				7F921D922D5F3FFE00771072 /* AllItemsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F921D1E2D5F368000771072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F921D272D5F368000771072 /* NYTFullMoyaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F921D282D5F368000771072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F921D312D5F368000771072 /* NYTFullMoyaAppUITests.swift in Sources */,
+				7F921D332D5F368000771072 /* NYTFullMoyaAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F921D242D5F368000771072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F921D0F2D5F367E00771072 /* NYTFullMoyaApp */;
+			targetProxy = 7F921D232D5F368000771072 /* PBXContainerItemProxy */;
+		};
+		7F921D2E2D5F368000771072 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F921D0F2D5F367E00771072 /* NYTFullMoyaApp */;
+			targetProxy = 7F921D2D2D5F368000771072 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7F921D342D5F368000771072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F921D352D5F368000771072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F921D372D5F368000771072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NYTFullMoyaApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Home.NYTFullMoyaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F921D382D5F368000771072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NYTFullMoyaApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Home.NYTFullMoyaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F921D3A2D5F368000771072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Home.NYTFullMoyaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYTFullMoyaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NYTFullMoyaApp";
+			};
+			name = Debug;
+		};
+		7F921D3B2D5F368000771072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Home.NYTFullMoyaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYTFullMoyaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NYTFullMoyaApp";
+			};
+			name = Release;
+		};
+		7F921D3D2D5F368000771072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Home.NYTFullMoyaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NYTFullMoyaApp;
+			};
+			name = Debug;
+		};
+		7F921D3E2D5F368000771072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Home.NYTFullMoyaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NYTFullMoyaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F921D0B2D5F367E00771072 /* Build configuration list for PBXProject "NYTFullMoyaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F921D342D5F368000771072 /* Debug */,
+				7F921D352D5F368000771072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F921D362D5F368000771072 /* Build configuration list for PBXNativeTarget "NYTFullMoyaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F921D372D5F368000771072 /* Debug */,
+				7F921D382D5F368000771072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F921D392D5F368000771072 /* Build configuration list for PBXNativeTarget "NYTFullMoyaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F921D3A2D5F368000771072 /* Debug */,
+				7F921D3B2D5F368000771072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F921D3C2D5F368000771072 /* Build configuration list for PBXNativeTarget "NYTFullMoyaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F921D3D2D5F368000771072 /* Debug */,
+				7F921D3E2D5F368000771072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7F921D7D2D5F3A3900771072 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7F921D7E2D5F3A3900771072 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F921D7D2D5F3A3900771072 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		7F921D802D5F3A3900771072 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F921D7D2D5F3A3900771072 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		7F921D822D5F3A3900771072 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F921D7D2D5F3A3900771072 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		7F921D842D5F3A3900771072 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F921D7D2D5F3A3900771072 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7F921D082D5F367E00771072 /* Project object */;
+}
