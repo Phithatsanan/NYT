@@ -23,7 +23,7 @@ struct EditItemView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save") {
-                        onSave(name, description)
+                        onSave(name, description)  // ✅ Ensure this triggers the update
                         presentationMode.wrappedValue.dismiss()
                     }
                     .disabled(name.isEmpty || description.isEmpty)

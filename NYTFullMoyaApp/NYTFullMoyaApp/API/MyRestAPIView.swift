@@ -51,10 +51,13 @@ struct MyRestAPIView: View {
             .sheet(isPresented: $isEditing) {
                 if let item = selectedItem {
                     EditItemView(name: item.name, description: item.description) { newName, newDesc in
-                        Task { await vm.updateItem(id: item.id, name: newName, description: newDesc) }
+                        Task {
+                            await vm.updateItem(id: item.id, name: newName, description: newDesc)
+                        }
                     }
                 }
             }
+
             .onAppear {
                 Task { await vm.loadItems() }
             }

@@ -37,16 +37,21 @@ class MyRestAPIViewModel: ObservableObject {
         isLoading = true
         errorMessage = nil
         let request = ItemRequest(name: name, description: description, createdAt: ISO8601DateFormatter().string(from: Date()))
+
         do {
             let updatedItem = try await repository.updateItem(id: id, request: request)
+            
+            // ✅ Update UI list with updated data
             if let index = items.firstIndex(where: { $0.id == id }) {
                 items[index] = updatedItem
             }
+            
         } catch {
             errorMessage = error.localizedDescription
         }
         isLoading = false
     }
+
     
     func deleteItem(id: Int) async {
         isLoading = true
