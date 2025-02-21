@@ -38,7 +38,7 @@ extension MyAPITarget: TargetType {
         case .createItem(let item), .updateItem(_, let item):
             return .requestJSONEncodable(item)
         case .deleteItem:
-            return .requestPlain
+            return .requestPlain // ✅ Ensure DELETE does not send a body
         }
     }
     

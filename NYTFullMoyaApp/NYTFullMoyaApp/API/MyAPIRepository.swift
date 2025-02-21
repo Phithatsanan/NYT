@@ -29,8 +29,6 @@ final class MyAPIRepository {
 
     func updateItem(id: Int, request: ItemRequest) async throws -> ItemResponse {
         let response = try await asyncRequest(.updateItem(id: id, item: request))
-        
-        // ✅ Ensure correct response is decoded
         return try JSONDecoder().decode(ItemResponse.self, from: response.data)
     }
 

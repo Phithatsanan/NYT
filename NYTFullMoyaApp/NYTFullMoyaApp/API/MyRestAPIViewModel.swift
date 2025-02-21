@@ -41,7 +41,6 @@ class MyRestAPIViewModel: ObservableObject {
         do {
             let updatedItem = try await repository.updateItem(id: id, request: request)
             
-            // ✅ Update UI list with updated data
             if let index = items.firstIndex(where: { $0.id == id }) {
                 items[index] = updatedItem
             }
@@ -58,9 +57,18 @@ class MyRestAPIViewModel: ObservableObject {
         errorMessage = nil
         do {
             try await repository.deleteItem(id: id)
-            items.removeAll { $0.id == id }
+            
+            // ✅ Ensure SwiftUI updates after deletion
+            DispatchQueue.main.async {
+                self.items.removeAll { $0.id == id }
+            }
+            
+            print("✅ Item deleted from UI: \(id)")
         } catch {
-            errorMessage = error.localizedDescription
+            DispatchQueue.main.async {
+                self.errorMessage = error.localizedDescription
+            }
+            print("❌ Failed to delete from UI: \(error.localizedDescription)")
         }
         isLoading = false
     }
