@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F2F39052D6871A8006C6D3E /* MyAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2F39042D6871A8006C6D3E /* MyAPIService.swift */; };
 		7F921D142D5F367E00771072 /* NYTFullMoyaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D132D5F367E00771072 /* NYTFullMoyaAppApp.swift */; };
 		7F921D162D5F367E00771072 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D152D5F367E00771072 /* ContentView.swift */; };
 		7F921D182D5F367E00771072 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D172D5F367E00771072 /* Item.swift */; };
@@ -96,6 +97,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F2F39042D6871A8006C6D3E /* MyAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPIService.swift; sourceTree = "<group>"; };
 		7F921D102D5F367E00771072 /* NYTFullMoyaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTFullMoyaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F921D132D5F367E00771072 /* NYTFullMoyaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTFullMoyaAppApp.swift; sourceTree = "<group>"; };
 		7F921D152D5F367E00771072 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -427,6 +429,7 @@
 			children = (
 				7FF119092D65C0CE00390818 /* Model */,
 				7FF119042D65C0AB00390818 /* MyAPITarget.swift */,
+				7F2F39042D6871A8006C6D3E /* MyAPIService.swift */,
 				7FF119072D65C0C400390818 /* MyAPIRepository.swift */,
 				7FF1190E2D65C0F500390818 /* MyRestAPIViewModel.swift */,
 				7FF119102D65C10100390818 /* EditItemView.swift */,
@@ -630,6 +633,7 @@
 				7FF119082D65C0C400390818 /* MyAPIRepository.swift in Sources */,
 				7F921D572D5F376400771072 /* BooksResponse.swift in Sources */,
 				7FF118F82D65A82B00390818 /* UserResponse.swift in Sources */,
+				7F2F39052D6871A8006C6D3E /* MyAPIService.swift in Sources */,
 				7FF118FA2D65A84200390818 /* LoginResponse.swift in Sources */,
 				7F921D702D5F382D00771072 /* BooksView.swift in Sources */,
 				7F921D512D5F374600771072 /* SearchArticlesRequest.swift in Sources */,

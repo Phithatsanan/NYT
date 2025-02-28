@@ -8,36 +8,36 @@ struct MyRestAPIView: View {
 
     var body: some View {
         NavigationView {
-            VStack {
-                if vm.isLoading {
-                    ProgressView("Loading...")
-                } else {
-                    List {
-                        ForEach(vm.items) { item in
-                            VStack(alignment: .leading) {
-                                Text(item.name).font(.headline)
-                                Text(item.description).font(.subheadline)
-                                Text("Created: \(item.createdAt)").font(.caption).foregroundColor(.gray)
-                                HStack {
-                                    Button("Edit") {
-                                        selectedItem = item
-                                        isEditing = true
-                                    }
-                                    .buttonStyle(BorderlessButtonStyle())
-                                    .foregroundColor(.blue)
-                                    
-                                    Button("Delete") {
-                                        Task { await vm.deleteItem(id: item.id) }
-                                    }
-                                    .buttonStyle(BorderlessButtonStyle())
-                                    .foregroundColor(.red)
-                                }
-                            }
+            List {
+                ForEach(vm.items) { item in
+                    VStack(alignment: .leading) {
+                        Text(item.name).font(.headline)
+                        Text(item.description).font(.subheadline)
+                        Text("Created: \(item.createdAt)")
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                    }
+                    .swipeActions(edge: .trailing) {
+                        Button(role: .destructive) {
+                            Task { await vm.deleteItem(id: item.id) }
+                        } label: {
+                            Label("Delete", systemImage: "trash")
                         }
+                        
+                        Button {
+                            selectedItem = item
+                            isEditing = true
+                        } label: {
+                            Label("Edit", systemImage: "pencil")
+                        }
+                        .tint(.blue)
                     }
                 }
             }
-            .navigationTitle("My RESTful API")
+            .refreshable {
+                await vm.loadItems()
+            }
+            .navigationTitle("My REST API")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Add") { isAdding = true }
@@ -57,7 +57,6 @@ struct MyRestAPIView: View {
                     }
                 }
             }
-
             .onAppear {
                 Task { await vm.loadItems() }
             }

@@ -11,7 +11,18 @@ struct EditItemView: View {
             Form {
                 Section(header: Text("Edit Item")) {
                     TextField("Name", text: $name)
+                        .textInputAutocapitalization(.words)
+                        .submitLabel(.done)
+                        .onSubmit {
+                            saveItem()
+                        }
+
                     TextField("Description", text: $description)
+                        .textInputAutocapitalization(.sentences)
+                        .submitLabel(.done)
+                        .onSubmit {
+                            saveItem()
+                        }
                 }
             }
             .navigationTitle("Edit Item")
@@ -23,12 +34,18 @@ struct EditItemView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Save") {
-                        onSave(name, description) 
-                        presentationMode.wrappedValue.dismiss()
+                        saveItem()
                     }
                     .disabled(name.isEmpty || description.isEmpty)
                 }
             }
+        }
+    }
+    
+    private func saveItem() {
+        if !name.isEmpty && !description.isEmpty {
+            onSave(name, description)
+            presentationMode.wrappedValue.dismiss()
         }
     }
 }

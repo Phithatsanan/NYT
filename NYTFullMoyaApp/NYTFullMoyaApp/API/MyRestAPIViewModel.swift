@@ -5,9 +5,9 @@ class MyRestAPIViewModel: ObservableObject {
     @Published var items: [ItemResponse] = []
     @Published var isLoading = false
     @Published var errorMessage: String?
-    
+
     private let repository = MyAPIRepository()
-    
+
     func loadItems() async {
         isLoading = true
         errorMessage = nil
@@ -18,7 +18,7 @@ class MyRestAPIViewModel: ObservableObject {
         }
         isLoading = false
     }
-    
+
     func createItem(name: String, description: String) async {
         isLoading = true
         errorMessage = nil
@@ -26,7 +26,9 @@ class MyRestAPIViewModel: ObservableObject {
         let request = ItemRequest(name: name, description: description, createdAt: createdAt)
         do {
             let response = try await repository.createItem(request: request)
-            items.append(response)
+            DispatchQueue.main.async {
+                self.items.append(response)
+            }
         } catch {
             errorMessage = error.localizedDescription
         }
@@ -40,35 +42,27 @@ class MyRestAPIViewModel: ObservableObject {
 
         do {
             let updatedItem = try await repository.updateItem(id: id, request: request)
-            
-            if let index = items.firstIndex(where: { $0.id == id }) {
-                items[index] = updatedItem
+            DispatchQueue.main.async {
+                if let index = self.items.firstIndex(where: { $0.id == id }) {
+                    self.items[index] = updatedItem
+                }
             }
-            
         } catch {
             errorMessage = error.localizedDescription
         }
         isLoading = false
     }
 
-    
     func deleteItem(id: Int) async {
         isLoading = true
         errorMessage = nil
         do {
             try await repository.deleteItem(id: id)
-            
-            // ✅ Ensure SwiftUI updates after deletion
             DispatchQueue.main.async {
                 self.items.removeAll { $0.id == id }
             }
-            
-            print("✅ Item deleted from UI: \(id)")
         } catch {
-            DispatchQueue.main.async {
-                self.errorMessage = error.localizedDescription
-            }
-            print("❌ Failed to delete from UI: \(error.localizedDescription)")
+            errorMessage = error.localizedDescription
         }
         isLoading = false
     }
