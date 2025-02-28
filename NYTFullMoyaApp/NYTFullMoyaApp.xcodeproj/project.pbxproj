@@ -53,6 +53,7 @@
 		7F921D942D5F400800771072 /* AllItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D932D5F400800771072 /* AllItemsViewModel.swift */; };
 		7F921D962D5F4BA800771072 /* NYTCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D952D5F4BA800771072 /* NYTCardView.swift */; };
 		7F921D982D5F520400771072 /* BookCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F921D972D5F520400771072 /* BookCardView.swift */; };
+		7FE106742D719BFE00A33C47 /* MyRestAPIContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE106732D719BFE00A33C47 /* MyRestAPIContainerView.swift */; };
 		7FF118E32D65A57D00390818 /* FakeStoreTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF118E22D65A57D00390818 /* FakeStoreTarget.swift */; };
 		7FF118E52D65A59D00390818 /* FakeStoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF118E42D65A59D00390818 /* FakeStoreRepository.swift */; };
 		7FF118E72D65A5BE00390818 /* ProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF118E62D65A5BE00390818 /* ProductRequest.swift */; };
@@ -142,6 +143,7 @@
 		7F921D932D5F400800771072 /* AllItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllItemsViewModel.swift; sourceTree = "<group>"; };
 		7F921D952D5F4BA800771072 /* NYTCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTCardView.swift; sourceTree = "<group>"; };
 		7F921D972D5F520400771072 /* BookCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCardView.swift; sourceTree = "<group>"; };
+		7FE106732D719BFE00A33C47 /* MyRestAPIContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRestAPIContainerView.swift; sourceTree = "<group>"; };
 		7FF118E22D65A57D00390818 /* FakeStoreTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeStoreTarget.swift; sourceTree = "<group>"; };
 		7FF118E42D65A59D00390818 /* FakeStoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeStoreRepository.swift; sourceTree = "<group>"; };
 		7FF118E62D65A5BE00390818 /* ProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequest.swift; sourceTree = "<group>"; };
@@ -435,6 +437,7 @@
 				7FF119102D65C10100390818 /* EditItemView.swift */,
 				7FF119142D65DD8000390818 /* AddItemView.swift */,
 				7FF119122D65DC0A00390818 /* MyRestAPIView.swift */,
+				7FE106732D719BFE00A33C47 /* MyRestAPIContainerView.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -634,6 +637,7 @@
 				7F921D572D5F376400771072 /* BooksResponse.swift in Sources */,
 				7FF118F82D65A82B00390818 /* UserResponse.swift in Sources */,
 				7F2F39052D6871A8006C6D3E /* MyAPIService.swift in Sources */,
+				7FE106742D719BFE00A33C47 /* MyRestAPIContainerView.swift in Sources */,
 				7FF118FA2D65A84200390818 /* LoginResponse.swift in Sources */,
 				7F921D702D5F382D00771072 /* BooksView.swift in Sources */,
 				7F921D512D5F374600771072 /* SearchArticlesRequest.swift in Sources */,

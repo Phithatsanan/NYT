@@ -1,6 +1,10 @@
 import SwiftUI
+import UIKit
 
 struct MainTabView: View {
+    
+    let myRestAPIViewModel:MyRestAPIViewModel
+    
     var body: some View {
         TabView {
             // “Advanced” Home
@@ -35,17 +39,19 @@ struct MainTabView: View {
                 }
             
             FakeStorePostView()
-                   .tabItem {
-                       Label("FakeStore", systemImage: "cart")
-                   }
+                .tabItem {
+                    Label("FakeStore", systemImage: "cart")
+                }
+            
             GitHubUsersView()
-                  .tabItem {
-                      Label("GitHub", systemImage: "person.3.fill")
-                  }
-              MyRestAPIView()
-                  .tabItem {
-                      Label("My API", systemImage: "tray.full.fill")
-                  }
+                .tabItem {
+                    Label("GitHub", systemImage: "person.3.fill")
+                }
+            
+            MyRestAPIContainerView(viewModel: myRestAPIViewModel)
+                            .tabItem {
+                                Label("My API", systemImage: "tray.full.fill")
+                            }
         }
     }
 }

@@ -1,3 +1,4 @@
+// MARK: - MyAPITarget.swift
 import Foundation
 import Moya
 
@@ -24,10 +25,10 @@ extension MyAPITarget: TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .getItems: return .get
-        case .createItem: return .post
-        case .updateItem: return .put
-        case .deleteItem: return .delete
+        case .getItems:     return .get
+        case .createItem:   return .post
+        case .updateItem:   return .put
+        case .deleteItem:   return .delete
         }
     }
     
@@ -35,14 +36,15 @@ extension MyAPITarget: TargetType {
         switch self {
         case .getItems:
             return .requestPlain
-        case .createItem(let item), .updateItem(_, let item):
+        case .createItem(let item),
+             .updateItem(_, let item):
             return .requestJSONEncodable(item)
         case .deleteItem:
             return .requestPlain
         }
     }
     
-    var headers: [String: String]? {
+    var headers: [String : String]? {
         ["Content-type": "application/json"]
     }
 }
