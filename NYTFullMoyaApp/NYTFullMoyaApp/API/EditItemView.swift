@@ -63,11 +63,23 @@ final class EditItemViewController: UIViewController {
     }
     
     @objc private func onSaveTapped() {
-        guard let newName = nameField.text, !newName.isEmpty,
-              let newDesc = descriptionField.text, !newDesc.isEmpty else {
+        guard let name = nameField.text, !name.isEmpty,
+              let desc = descriptionField.text, !desc.isEmpty else {
+            showAlert(title: "Missing Information", message: "Please fill in both fields before saving.")
             return
         }
-        onSave(newName, newDesc)
+        
+        // Call the onSave callback to update the ViewModel
+        onSave(name, desc)
+        
+        // Use pop instead of dismiss for a pushed navigation stack
         navigationController?.popViewController(animated: true)
+    }
+
+
+    private func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alertController, animated: true)
     }
 }

@@ -59,14 +59,22 @@ final class AddItemViewController: UIViewController {
     @objc private func onCancel() {
         dismiss(animated: true)
     }
-    
+
     @objc private func onSave() {
         guard let name = nameField.text, !name.isEmpty,
               let desc = descriptionField.text, !desc.isEmpty else {
-            // Show an alert or do nothing
+            showAlert(title: "Missing Information", message: "Please fill in both fields before saving.")
             return
         }
+        
         onAdd(name, desc)
         dismiss(animated: true)
     }
+
+    private func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alertController, animated: true)
+    }
+
 }
