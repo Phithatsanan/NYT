@@ -18,6 +18,64 @@
             endingLineNumber = "38"
             landmarkName = "loadTopic(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1F3871D3-D2A1-4629-BD99-AD0B6A5B0D67 - c944a9c9d2247430"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+               <Location
+                  uuid = "1F3871D3-D2A1-4629-BD99-AD0B6A5B0D67 - 7904981ed3a4142a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+               <Location
+                  uuid = "1F3871D3-D2A1-4629-BD99-AD0B6A5B0D67 - 335e98460f1db82e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+               <Location
+                  uuid = "1F3871D3-D2A1-4629-BD99-AD0B6A5B0D67 - e724302f85bf7f75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(10) suspend resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -34,6 +92,64 @@
             endingLineNumber = "42"
             landmarkName = "loadTopic(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "73174780-FBD1-4640-987A-2ED5F0C90EEF - c944a9c9d22475ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42">
+               </Location>
+               <Location
+                  uuid = "73174780-FBD1-4640-987A-2ED5F0C90EEF - 2ddf59058ddd59b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42">
+               </Location>
+               <Location
+                  uuid = "73174780-FBD1-4640-987A-2ED5F0C90EEF - 755088c76876fdb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42">
+               </Location>
+               <Location
+                  uuid = "73174780-FBD1-4640-987A-2ED5F0C90EEF - 1afc29579d611dee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(11) suspend resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -50,6 +166,64 @@
             endingLineNumber = "46"
             landmarkName = "loadTopic(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7C0F7D48-5D73-43CB-8DDC-C3C6FEC92767 - c944a9c9d2247528"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46">
+               </Location>
+               <Location
+                  uuid = "7C0F7D48-5D73-43CB-8DDC-C3C6FEC92767 - 8093060b66769d3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) await resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46">
+               </Location>
+               <Location
+                  uuid = "7C0F7D48-5D73-43CB-8DDC-C3C6FEC92767 - bf697b45c5a84132"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(7) suspend resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46">
+               </Location>
+               <Location
+                  uuid = "7C0F7D48-5D73-43CB-8DDC-C3C6FEC92767 - 88b40fdf952ac06b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(12) suspend resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -66,6 +240,64 @@
             endingLineNumber = "50"
             landmarkName = "loadTopic(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C58E9C1E-0A64-4364-A188-DEC3C35CCA96 - c944a9c9d22472a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50">
+               </Location>
+               <Location
+                  uuid = "C58E9C1E-0A64-4364-A188-DEC3C35CCA96 - 7767c70e40efe6b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(8) await resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50">
+               </Location>
+               <Location
+                  uuid = "C58E9C1E-0A64-4364-A188-DEC3C35CCA96 - e1636bc23e8182bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(9) suspend resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50">
+               </Location>
+               <Location
+                  uuid = "C58E9C1E-0A64-4364-A188-DEC3C35CCA96 - 3e0ce4466a9c60e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(13) suspend resume partial function for NYTFullMoyaApp.AllItemsViewModel.loadTopic(NYTFullMoyaApp.AllTopic) async -&gt; ()"
+                  moduleName = "NYTFullMoyaApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/s_lphithatsanan/Documents/GitHub/NYTFullMoyaApp/NYT/NYTFullMoyaApp/NYTFullMoyaApp/%20UI/Scenes/MainHomeScene/AllItemsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

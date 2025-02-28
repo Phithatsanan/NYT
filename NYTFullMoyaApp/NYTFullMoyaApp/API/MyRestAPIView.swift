@@ -1,11 +1,9 @@
-// MyRestAPIViewController.swift
 import UIKit
 
 final class MyRestAPIViewController: UIViewController {
     
     private let viewModel: MyRestAPIViewModel
     
-    // A fancier table style
     private let tableView = UITableView(frame: .zero, style: .insetGrouped)
 
     init(viewModel: MyRestAPIViewModel) {
@@ -21,8 +19,7 @@ final class MyRestAPIViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        
-        // Some advanced tweaks
+
         tableView.rowHeight = 70
         tableView.separatorStyle = .singleLine
         tableView.showsVerticalScrollIndicator = false
@@ -30,10 +27,8 @@ final class MyRestAPIViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         
-        // Register a basic UITableViewCell (we'll configure it more advanced below)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-        // Layout
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -43,7 +38,6 @@ final class MyRestAPIViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
         
-        // "Add" button
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             title: "Add",
             style: .plain,
@@ -51,14 +45,19 @@ final class MyRestAPIViewController: UIViewController {
             action: #selector(onAddTapped)
         )
 
-        // Load items from the ViewModel
+        // Load initial data
         Task {
             await viewModel.loadItems()
             tableView.reloadData()
-            
-            if let error = viewModel.errorMessage {
-                print("Error: \(error)")
-            }
+        }
+
+        // 🔴 Listen for WebSocket Updates
+        NotificationCenter.default.addObserver(self, selector: #selector(updateTableView), name: .dataUpdated, object: nil)
+    }
+
+    @objc private func updateTableView() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
         }
     }
 
@@ -67,24 +66,19 @@ final class MyRestAPIViewController: UIViewController {
             guard let self = self else { return }
             Task {
                 await self.viewModel.createItem(name: name, description: desc)
-                self.tableView.reloadData()
             }
         }
-        
         let nav = UINavigationController(rootViewController: addVC)
         present(nav, animated: true)
     }
 }
 
 extension MyRestAPIViewController: UITableViewDataSource, UITableViewDelegate {
-    // How many rows?
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.items.count
     }
-    
-    // Build each cell with a more modern UIListContentConfiguration
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         var content = cell.defaultContentConfiguration()
         
@@ -92,11 +86,7 @@ extension MyRestAPIViewController: UITableViewDataSource, UITableViewDelegate {
         
         content.text = item.name
         content.secondaryText = item.description
-        
-        // Just an SF Symbol for fun:
         content.image = UIImage(systemName: "tray.full")
-        
-        // Make the text bigger:
         content.textProperties.font = .systemFont(ofSize: 20, weight: .semibold)
         content.secondaryTextProperties.font = .systemFont(ofSize: 16, weight: .regular)
         
@@ -104,33 +94,25 @@ extension MyRestAPIViewController: UITableViewDataSource, UITableViewDelegate {
         cell.accessoryType = .disclosureIndicator
         return cell
     }
-    
-    // Tap => Edit
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = viewModel.items[indexPath.row]
-        
         let editVC = EditItemViewController(item: item) { [weak self] newName, newDesc in
             guard let self = self else { return }
             Task {
                 await self.viewModel.updateItem(id: item.id, name: newName, description: newDesc)
-                self.tableView.reloadData()
             }
         }
         navigationController?.pushViewController(editVC, animated: true)
     }
-    
-    // Swipe to delete
-    func tableView(_ tableView: UITableView,
-                   trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
+
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
         -> UISwipeActionsConfiguration? {
-            
-        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") {
-            [weak self] _, _, completion in
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { [weak self] _, _, completion in
             guard let self = self else { return }
             let item = self.viewModel.items[indexPath.row]
             Task {
                 await self.viewModel.deleteItem(id: item.id)
-                self.tableView.deleteRows(at: [indexPath], with: .automatic)
                 completion(true)
             }
         }

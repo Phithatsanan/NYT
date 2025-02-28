@@ -1,16 +1,22 @@
-// MyRestAPIViewModel.swift
 import Foundation
 
-final class MyRestAPIViewModel {
+final class MyRestAPIViewModel: ObservableObject {
     private let repository: MyAPIRepositoryProtocol
     
-    // These hold our "View" state
-    private(set) var items: [ItemResponse] = []
-    private(set) var errorMessage: String?
-    private(set) var isLoading = false
+    @Published var items: [ItemResponse] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                NotificationCenter.default.post(name: .dataUpdated, object: nil)
+            }
+        }
+    }
+    
+    @Published var errorMessage: String?
+    @Published var isLoading = false
     
     init(repository: MyAPIRepositoryProtocol) {
         self.repository = repository
+        startWebSocketListening() // Start listening for WebSocket updates
     }
     
     @MainActor
@@ -25,7 +31,7 @@ final class MyRestAPIViewModel {
         }
         isLoading = false
     }
-
+    
     @MainActor
     func createItem(name: String, description: String) async {
         isLoading = true
@@ -46,16 +52,12 @@ final class MyRestAPIViewModel {
     func updateItem(id: Int, name: String, description: String) async {
         isLoading = true
         errorMessage = nil
-        let request = ItemRequest(
-            name: name,
-            description: description,
-            createdAt: ISO8601DateFormatter().string(from: Date())
-        )
+        let request = ItemRequest(name: name, description: description, createdAt: ISO8601DateFormatter().string(from: Date()))
         
         do {
             let updated = try await repository.updateItem(id: id, request: request)
-            if let idx = items.firstIndex(where: { $0.id == id }) {
-                items[idx] = updated
+            if let index = items.firstIndex(where: { $0.id == id }) {
+                items[index] = updated
             }
         } catch {
             errorMessage = error.localizedDescription
@@ -74,5 +76,34 @@ final class MyRestAPIViewModel {
             errorMessage = error.localizedDescription
         }
         isLoading = false
+    }
+
+    // MARK: - WebSocket Listener
+    private func startWebSocketListening() {
+        NotificationCenter.default.addObserver(self, selector: #selector(handleWebSocketUpdate(_:)), name: .dataUpdated, object: nil)
+    }
+
+    @objc private func handleWebSocketUpdate(_ notification: Notification) {
+        guard let update = notification.object as? WebSocketUpdate else { return }
+        
+        DispatchQueue.main.async {
+            switch update.action {
+            case "item_added":
+                if let newItem = update.item {
+                    self.items.append(newItem)
+                }
+            case "item_updated":
+                if let updatedItem = update.item,
+                   let index = self.items.firstIndex(where: { $0.id == updatedItem.id }) {
+                    self.items[index] = updatedItem
+                }
+            case "item_deleted":
+                if let deletedItem = update.item {
+                    self.items.removeAll { $0.id == deletedItem.id }
+                }
+            default:
+                break
+            }
+        }
     }
 }
